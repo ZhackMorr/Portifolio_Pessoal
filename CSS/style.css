@@ -1,0 +1,711 @@
+/*CONFIGURAÇÕES GERAIS*/ 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #000000;
+        height: 100vh;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;;
+    }
+
+    main {
+        color: #fff;
+    }
+
+    section {
+        padding: 40px 8%;
+    }
+
+    main section h1 {
+        font-size: 35px;
+    }
+
+    .interface {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #topo-pagina, #secao-sobre-mim, #secao-habilidades, #secao-projetos, #secao-contato {
+        padding-top: 120px;
+    }
+    
+/* BARRA DE NAVEGAÇÃO */
+    .barra_Navegacao {
+        margin: 0 auto;
+        position: fixed;
+        width: 100%;
+        background-color: #000000;
+        padding: 0px 100px 0px 140px;
+        z-index: 1000;
+    }
+
+    /* Centralizar barra e colocar tudo um do lado do outro */
+    header > .barra_Navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+    width: 100%;
+    }
+
+    /* Lista */
+    header a {
+        color: #818181;
+        text-decoration: none;
+    }
+
+    .barra_Navegacao a:hover {
+        color: #fff;
+        transform: scale(1.10);
+        display: inline-block;
+        transition: .05s;
+    }
+
+    header nav ul {
+        list-style-type: none;
+    }
+
+    header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+    }
+
+    /* Logo */
+    .nome_Logo img {
+        width: 300px;
+        padding: 0 0;
+    }
+
+    /* Botão */
+    .isaac_Contato button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #00D3E8;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0px 125px;
+    }
+
+    .isaac_Contato button:hover {
+        transform: scale(1.05);
+        transition: .05s;
+        box-shadow: 0px 0px 8px #00d5e8;
+    }
+
+/* MENU DO SITE MOBILE */
+    .abrir_Menu img {
+        width: 40px;
+    }
+
+    .menu_Mobile {
+        background-color: rgba(0, 0, 0, 0.541);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0%;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .botao_Fechar img {
+        width: 30px;
+    }
+
+    .botao_Fechar {
+       padding: 20px 5%;
+    }
+
+    .menu_Mobile nav ul {
+        text-align: right;
+    }
+
+    .menu_Mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .menu_Mobile nav ul li {
+        display: block;
+        margin: 30px 10px;
+    }
+    
+
+/* CONTEÚDO DO TOPO */
+
+    section.topo {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(/IMG/Fotos/fundo.jpg);
+        background-size: cover;        
+    }
+
+    /* Texto - aplicado no autor também */
+    .texto_Topo {
+        color: #00d5e8;
+        margin: 0% 3%;
+    }
+
+    .texto_Topo h1 {
+        margin-bottom: 0;
+        color: #fff;
+    }
+
+    .texto_Topo h1 span {
+        color: #00d5e8 ;
+    }
+
+    /* Redes Sociais */
+    .texto_Topo button {
+        border-radius: 50%;
+        background-color: #00D3E8;
+        border: 0;
+        margin-top: 50px;
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #linkedin a img{
+        padding-left: 15px;
+    }
+
+    .texto_Topo button:hover {
+        transform: scale(1.05);
+        transition: .05s;
+        box-shadow: 0px 0px 8px #00d5e8;
+    }
+
+
+    .texto_Topo button a img {
+        width: 30px;
+        margin-top: 2px;
+    }
+
+    .texto_Topo button a #linkedin {
+        margin-left: 3px;
+    }
+
+    #motivacao {
+        margin-top: 40px;
+        color: #fff;
+    }
+
+    /* Perfil */
+    .perfil img {
+        width: 400px;
+        margin: 40% 100px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #00D3E8;
+    }
+
+/* SOBRE MIM */
+
+    /* Foto do lado do texto */
+    .foto_Familia img {
+        width: 400px;
+        position: relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+        border-radius: 20px;
+        z-index: -99;
+    }
+
+    /* Conteúdo */
+    .conteudo_Apresentacao h1 span {
+        color: #00d5e8;
+        display: block;
+    }
+
+    .conteudo_Apresentacao h1 {
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+
+    .conteudo_Apresentacao p {
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .conteudo_Apresentacao p a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .sobre_Mim h1 {
+        border-left: #00D3E8 solid 4px;
+        padding-left: 15px;
+    }
+
+    .sobre_Mim p {
+        border-left: #ffffff solid 4px;
+        padding-left: 15px;
+    }
+
+    .sobre_Mim > .interface {
+        gap: 90px;
+    }
+
+    /* Animação de flutuar da foto de apresentação */
+    @keyframes flutuar {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: 20px;
+        }
+    }
+
+/* HABILIDADES */
+
+    .habilidades {
+        margin: 120px 0px;
+    }
+
+    .icone > img {
+        width: 50px;
+    }
+
+    .conteudo_Habilidades span {
+        color: #00D3E8;
+    }
+
+    .interface {
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Habilidades e ícones */
+    .interface_Habilidades {
+        display: flex;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+        gap: 50px;
+    }
+
+    .interface_Habilidades img {
+        width: 100px;
+    }
+
+    .container_Habilidades {
+        background-color: #fff;
+        margin-top: 80px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 20px;
+        padding: 10px;
+        color: #000;
+        justify-content: center;
+    }
+
+/* MEUS PORJETOS */
+
+    /* Fundo */
+    section.projetos {
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(/IMG/Fotos/fundo3.jpg);
+        background-size: cover;
+    }
+
+    /* Div projetos */
+    .img_Projeto {
+        width: 520px;
+        height: 460px;
+        background-color: #00000056;
+        background-size: cover;
+        justify-content: space-around;
+        border-radius: 40px;
+        position: relative;
+        background-position:center;
+        cursor: pointer;
+    }
+
+    .titulo_Projeto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+
+    .conteudo_Projetos {
+        margin-top: 80px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000056;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .overlay:hover {
+        opacity: 1;
+    }
+
+    /* Descrição dos projetos */
+    .descricao {
+        background-color: #000000e3;
+        width: 360px;
+        height: 300px;    
+        border-radius: 40px;   
+    }
+
+    .descricao p {
+        text-align: center; 
+        margin: 10px 10px;
+    }
+
+    .descricao p a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .descricao h3 {
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #00D3E8;
+        margin-top: 10px;
+    }
+
+    /* Botão para visitar o projeto */
+    .descricao button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #00D3E8;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 10px 135px;
+    }
+
+    .descricao button:hover {
+        transform: scale(1.05);
+        transition: .05s;
+        box-shadow: 0px 0px 8px #00d5e8;
+    }
+
+    .descricao a {
+        text-decoration: none;
+        color: #000;
+    }
+
+/* FORMULÁRIO */
+    .container_Forms {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: #2c2c2ce5;
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    textarea {
+        resize: none;
+        height: 200px;
+    }
+
+    form .btn_Enviar {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    form .btn_Enviar input {
+        width: 120px;
+        background-color: #00D3E8;
+        font-weight: bold;
+        color: #000;
+
+    }
+
+    .btn_Enviar input:hover {
+        transform: scale(1.05);
+        transition: .05s;
+        box-shadow: 0px 0px 8px #00d5e8;
+        cursor: pointer;
+    }
+
+/* RODAPÉ */
+    section.rodape {
+        box-shadow: 0px 0px 20px #ffffff36;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social {
+        display: flex;
+        margin: 55px;
+    }
+
+    .social button a img {
+        width: 30px;
+    }
+
+    .social button {
+        border-radius: 50%;
+        background-color: #00D3E8;
+        border: 0;
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .social button:hover {
+        transform: scale(1.05);
+        transition: .05s;
+        box-shadow: 0px 0px 8px #00d5e8;
+    }
+
+    .agradecimento h3{
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* -------------RESPONSIVIDADE CELULAR--------------- */
+
+@media screen and (max-width: 1000px) {
+
+/* GERAL */
+
+    .topo .interface {
+        flex-direction: column-reverse;
+    }
+
+    .interface {
+        flex-direction: column;
+    }
+
+    #topo-pagina, #secao-sobre-mim, #secao-habilidades, #secao-projetos, #secao-contato {
+        padding-top: 50px;
+        margin: 0px 0px;
+    }
+
+/* BARRA DE NAVEGAÇÃO */
+    /* Esconder menu de navegação */
+    .menu_Pc, .isaac_Contato {
+        display: none;
+    }
+
+    /* Logo com nome */
+    .nome_Logo a img {
+        width: 200px;
+        padding: 0 0;
+    }
+
+    .barra_Navegacao {
+        padding: 0px 60px;
+    }
+
+    .barra_Navegacao img {
+        padding: 0px 60px;
+    }
+        
+/* CONTEÚDO DO TOPO */
+
+    /* Texto - aplicado no autor também */
+    .texto_Topo {
+        text-align: center;
+    }
+
+    /* Perfil */
+    .perfil img {
+        width: 300px;
+        margin-top: 180px;
+    }
+
+/* SOBRE MIM */
+
+    /* Foto do lado do texto */
+
+    .sobre_Mim .interface {
+        flex-direction: column;
+    }
+
+    .foto_Familia img {
+        width: 300px;
+    }
+
+    /* Conteúdo */
+    .sobre_Mim p {
+        border: none;
+        text-align: justify;
+        padding: 0;
+    }
+
+    .sobre_Mim h1 {
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .sobre_Mim > .interface {
+        gap: 60px;
+    }
+
+    .conteudo_Apresentacao h1 {
+        font-size: 30px;
+    }
+
+/* HABILIDADES */
+
+    .habilidades {
+        justify-content: center;
+        
+        
+    }
+
+    .habilidades .interface {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .habilidades .interface h1 {
+        font-size: 30px;
+    }
+
+    .habilidades .interface img {
+        width: 40px;
+    }
+
+    /* Habilidades e ícones */
+    .interface_Habilidades {
+        margin: 50px 0px;
+        gap: 0px; 
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .interface_Habilidades div {
+        width: 90px;
+    }
+
+    .interface_Habilidades div img {
+        width: 50px;
+    }
+
+    .container_Habilidades {
+        background-color: #fff;
+        margin: 40px 0px;
+        padding: 1px;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .container_Habilidades p {
+        font-size: 11px;
+    }
+
+    .container_Habilidades h2 {
+        font-size: 15px;
+    }
+
+/* MEUS PORJETOS */
+
+    /* Div projetos */
+    .img_Projeto {
+        width: 100%;
+        max-width: 360px;
+        height: 360px;
+    }
+
+    .titulo_Projeto h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .titulo_Projeto {
+        gap: 10px;
+    }
+
+    /* Descrição dos projetos */
+    .descricao {
+        width: 100%;
+        height: 300px;
+        max-width: 260px;
+    }
+
+    .overlay {
+        padding: 0px 10px;
+    }
+
+    .descricao p {
+        font-size: 14px;
+        margin: 10px 20px;
+    }
+
+    .descricao h3 {
+        font-size: 18px;
+    }
+
+    .descricao button {
+        margin: 10px 90px;
+    }
+
+/* RODAPÉ */
+    section.rodape {
+        flex-direction: column;
+    }
+
+    .social button a img {
+        width: 30px;
+        gap: 10px;
+    }
+
+    .social button {
+        margin: 10px;
+    }
+
+    .agradecimento h3{
+        margin-top: 35px;
+    }
+
+    .nome_Logo a img {
+        width: 250px;
+    }
+}
